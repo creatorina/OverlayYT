@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Overlay Gabungan OBS</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: transparent;
+    }
+    iframe {
+      position: absolute;
+      border: none;
+      pointer-events: none;
+    }
+    #chatbox {
+      width: 400px;
+      height: 600px;
+      bottom: 0;
+      right: 0;
+    }
+    #socialbuzzMedia {
+      width: 640px;
+      height: 360px;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #socialbuzzAlert {
+      width: 500px;
+      height: 150px;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #saweriaAlert {
+      width: 500px;
+      height: 150px;
+      top: 170px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #saweriaMedia {
+      width: 640px;
+      height: 360px;
+      bottom: 480px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #streamlabsAlert {
+      width: 600px;
+      height: 200px;
+      top: 340px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Streamlabs Chat -->
+  <iframe id="chatbox" src="https://streamlabs.com/widgets/chat-box/v1/67451F901FC3DB66E8B31194C82F6F38C9165F5F5C70C11B0793A8B173199CBAF87D1C440F383EE9463C487F58089F45E8435962F30518D5DB5DE5CB5141D7FD39B694AC5BA75E685E12E055CFD8EEB9562B7D429CE65A3AC9CD86863AF646385C4B8614BF3D9FDBE2193FF6F32707758CCE678AC345F51EE1A94CC4C1"></iframe>
+
+  <!-- Sociabuzz Media Share -->
+  <iframe id="socialbuzzMedia" src="https://sociabuzz.com/pro/tribe/mediashare/v2/2763053236?colorName=%23319dff&alphaName=1&colorNote=%2319ff00&alphaNote=1&colorFrom=%23eeeeee&alphaFrom=1&mediashareActive=1&mediashareTTS=0&font=Denk%2BOne%3A400&mediashareNSFW=1"></iframe>
+
+  <!-- Sociabuzz Alert -->
+  <iframe id="socialbuzzAlert" src="https://sociabuzz.com/pro/tribe/alert1/v3/2763053236?colorName=%2300b7ff&alphaName=1&colorNote=%2300ff07&alphaNote=1&colorFrom=%23ffffff&alphaFrom=1&gifActive=1&maxDuration=10&font=Denk%2BOne%3A400"></iframe>
+
+  <!-- Saweria Alert -->
+  <iframe id="saweriaAlert" src="https://saweria.co/widgets/alert?streamKey=9832cc4698ec15f8a1b37628e0ae61f3"></iframe>
+
+  <!-- Saweria Media Share -->
+  <iframe id="saweriaMedia" src="https://saweria.co/widgets/mediashare?streamKey=9832cc4698ec15f8a1b37628e0ae61f3"></iframe>
+
+  <!-- Streamlabs Alert Box (subs, donate, sponsor) -->
+  <iframe id="streamlabsAlert" src="https://streamlabs.com/alert-box/v3/67451F901FC3DB66E8B31194C82F6F38C9165F5F5C70C11B0793A8B173199CBAF87D1C440F383EE9463C487F58089F45E8435962F30518D5DB5DE5CB5141D7FD39B694AC5BA75E685E12E055CFD8EEB9562B7D429CE65A3AC9CD86863AF646385C4B8614BF3D9FDBE2193FF6F32707758CCE678AC345F51EE1A94CC4C1?donations=1&subscribers=1&sponsors=1&sponsored_campaign=1"></iframe>
+
+</body>
+</html>
